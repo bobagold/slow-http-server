@@ -1,0 +1,13 @@
+{
+    "name": "bobagold/slow-http-server",
+    "description": "Slow web site that outputs html/images with modem speed",
+    "authors": [
+        {
+            "name": "Vladimir Goldobin",
+            "email": "vgold@xiag.ch"
+        }
+    ],
+    "require": {
+
+    }
+}
