@@ -1,7 +1,7 @@
 <?php
 function show($response, $delay)
 {
-    @apache_setenv('no-gzip', 1);
+    function_exists('apache_setenv') ? @apache_setenv('no-gzip', 1) : false;
     @ini_set('zlib.output_compression', 0);
     @ini_set('implicit_flush', 1);
     for ($i = 0; $i < ob_get_level(); $i++) { ob_end_flush(); }
